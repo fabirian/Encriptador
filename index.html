@@ -6,42 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index_tablets.css">
-    <link rel="stylesheet" href="css/index_moviles.css">
-    <link rel="stylesheet" href="css/toast.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_tablets.css">
+    <link rel="stylesheet" href="css/style_movile.css">
     <title>Encriptador de texto</title>
 </head>
 
 <body>
     <div class="logo">
-        <img class="img-logo" src="images/logo.png">
+        <img class="img_logo" src="images/logo.png">
     </div>
-    <textarea class="tit-prin" id="Texto" placeholder="Ingrese el texto aquí"></textarea>
-    <div class="div-warning">
+    <textarea class="textarea_input" id="txt" placeholder="Ingrese el texto aquí"></textarea>
+    <div class="warning_container">
         <img class="warning" id="idwarning" src="images/exclamacion.png">
-        <p class="p-forma" id="iderror">Solo letras minúsculas y sin acentos</p>
+        <p class="form_message" id="iderror">Solo letras minúsculas y sin acentos</p>
     </div>
-    <div class="div-botones">
-        <button class="encriptar">
-            <p class="p-encriptar">Encriptar</p>
+    <div class="container_btn">
+        <button class="encrypt">
+            <p class="p_encrypt">Encriptar</p>
         </button>
-        <button class="desencriptar">
-            <p class="p-desencriptar">Desencriptar</p>
+        <button class="decrypt">
+            <p class="p_decrypt">Desencriptar</p>
         </button>
     </div>
     <div class="text-area">
-        <textarea class="frase-codificada" id="fraseCodi" readonly></textarea>
-        <img src="images/persona.png" alt="" class="muneco">
-        <div class="descr-area">
-            <p class="p-descr-area-tit">No se encontro mensaje</p>
-            <p class="p-descr-area-descr">Ingrese el texto que desea encriptar o desencriptar</p>
+        <textarea class="code_phrase" id="pharseCod" readonly></textarea>
+        <img src="images/persona.png" alt="" class="person">
+        <div class="descypt_area">
+            <p class="descrypt_area_til">Ningún mensaje fue encontrado</p>
+            <p class="descrypt_area_des">Ingrese el texto que desea encriptar o desencriptar</p>
         </div>
-        <button class="copiar">
-            <p class="p-copiar">Copiar</p>
+        <button class="copy">
+            <p class="p_copy">Copiar</p>
         </button>
     </div>
 </body>
 <script src="js/index.js"></script>
-<script src="js/toast.js"></script>
 </html>
